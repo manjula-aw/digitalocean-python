@@ -9,7 +9,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         self.send_response(HTTPStatus.OK)
         self.end_headers()
-        msg = 'Hello! you requested %s' % (self.path)
+        msg = "Coming Soon!"
+        msg += "<br/>Discover, Engage, and Grow with Us!"
+        msg = "<br/>We're busy crafting a unique space where inspiration meets practical advice. "
+        msg += "<br/>Our blog and YouTube channel will soon be your go-to resources for insightful, thought-provoking content that sparks your curiosity and fuels your personal and professional growth."
         self.wfile.write(msg.encode())
 
 
